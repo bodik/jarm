@@ -496,10 +496,12 @@ def main():
         if ip != None:
             print("Domain: " + destination_host)
             print("Resolved IP: " + ip)
+            print("Port: " + str(destination_port))
             print("JARM: " + result)
         else:
             print("Domain: " + destination_host)
             print("Resolved IP: IP failed to resolve.")
+            print("Port: " + str(destination_port))
             print("JARM: " + result)
         #Verbose mode adds pre-fuzzy-hashed JARM
         if args.verbose:
